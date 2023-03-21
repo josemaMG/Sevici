@@ -33,7 +33,7 @@ public class Estacion {
 	
 	public Estacion(String linea) {
 		String [] splits = linea.split(",");
-		if(splits.length!=4) {
+		if(splits.length!=5) {
 			throw new IllegalArgumentException();
 		}
 		
