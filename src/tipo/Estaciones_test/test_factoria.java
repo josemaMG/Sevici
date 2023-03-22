@@ -6,7 +6,7 @@ public class test_factoria {
 
 	public static void main(String[] args) {
 		
-		System.out.println(FactoriaRedEstaciones.leerRedEstaciones("data/estaciones.csv"));
+		System.out.println(FactoriaRedEstaciones.leerRedEstaciones("data/estaciones.csv").getEstaciones().get(2));
 
 	}
 

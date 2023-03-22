@@ -8,6 +8,7 @@ import java.util.SortedSet;
 import java.util.TreeSet;
 
 public class RedEstaciones {
+
 	private List<Estacion> estaciones;
 	
 	public RedEstaciones() {
