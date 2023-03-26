@@ -1,11 +1,14 @@
 package tipo.Estaciones;
 
+import java.util.List;
+
 import tipo.Auxiliar.Auxiliar;
 
 public class FactoriaRedEstaciones {
 	public static RedEstaciones leerRedEstaciones(String nombreFichero) {
+		List<String> Lista= Auxiliar.leeFichero(nombreFichero);
 		RedEstaciones result= new RedEstaciones();
-		for (String e: Auxiliar.leeFichero(nombreFichero).subList(1, Auxiliar.leeFichero(nombreFichero).size()-1)) {
+		for (String e: Lista.subList(1, Lista.size())) {
 			result.añadirEstacion(parsearEstacion(e));
 		}
 		return result;
